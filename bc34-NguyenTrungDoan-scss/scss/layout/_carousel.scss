@@ -1,0 +1,32 @@
+.carousel{
+    background-image: url(http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/Violet_top_left_wave.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;  
+    padding: 50px 0px;
+    h1 {
+        .bt_bb_headline_superheadline {
+            @include styleText($fs-2,$fw-3,$color-5);
+            margin-bottom: 0.5em;
+        }
+        .bt_bb_headline_content {
+            @include styleText($fs-9,$fw-2,$color-dark-2);
+            &::after{
+                content: " ";
+              display: table;
+              width: 100%;
+             clear: both;
+             line-height: 0;
+            }
+        } 
+    }
+     img {
+        .img-fluid{
+        display: block;
+        margin: 0;
+        line-height: 0;
+        max-width: 100%;
+        height: auto;
+        }
+     }
+}

@@ -1,0 +1,242 @@
+.btnPhone {
+  background: #B61883;
+  padding: 8px 25px;
+  border: 2px solid #B61883;
+  border-radius: 30px;
+  letter-spacing: 0.015rem;
+  font-size: 14px;
+  font-weight: 400;
+  color: #f5f9fe;
+  box-shadow: 0 3px 6px #c9d8f4;
+  transition: 0.5s;
+}
+.btnPhone:hover {
+  background: #f5f9fe;
+  border-color: #B61883;
+  color: #B61883;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px #e2ebfc;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+header .nav-item {
+  padding-right: 30px;
+}
+header .nav-item .nav-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #121212;
+  padding: 20px;
+  transition: 0.2s;
+}
+header .nav-item .nav-link::after {
+  content: "";
+  bottom: -4px;
+  margin-left: -4px;
+  z-index: 5;
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  width: 8px;
+  height: 8px;
+  display: block;
+  background-color: #B61883;
+  transform: scale(0);
+  transition: 0.2s;
+}
+header .nav-item .nav-link:hover {
+  color: #B61883;
+}
+header .nav-item .nav-link:hover::after {
+  transform: scaleY(1);
+}
+header .nav-icon .nav-link {
+  font-size: 14px;
+  color: #121212;
+  transition: 0.5s;
+}
+header .nav-icon .nav-link:hover {
+  color: #B61883;
+}
+
+.carousel {
+  background-image: url(http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/Violet_top_left_wave.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  padding: 50px 0px;
+}
+.carousel h1 .bt_bb_headline_superheadline {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #B61883;
+  margin-bottom: 0.5em;
+}
+.carousel h1 .bt_bb_headline_content {
+  font-size: 55px;
+  font-weight: 600;
+  color: #121212;
+}
+.carousel h1 .bt_bb_headline_content::after {
+  content: " ";
+  display: table;
+  width: 100%;
+  clear: both;
+  line-height: 0;
+}
+.carousel img .img-fluid {
+  display: block;
+  margin: 0;
+  line-height: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  background-image: url(http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/Wave_White_bottom_right_shape_01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  background-color: #dcd1f3;
+}
+.content .cardPhone {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.content .card-body span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #B61883;
+  text-transform: uppercase;
+  padding: 110px;
+}
+.content .card-body h3 {
+  text-align: center;
+}
+.content .card-body p {
+  text-align: center;
+}
+.content #teacher_content {
+  padding: 50px;
+}
+
+.contact {
+  background-image: url(http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/accent_bottom_wave_01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.contact #contact-1 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.contact h1 {
+  font-size: 30px;
+}
+.contact .btContact .btContactRow input {
+  padding: 1em 1em 1em 3.5em !important;
+  font-size: 0.8em !important;
+  height: 3.7em;
+}
+.contact .btContact .btContactRow {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1em;
+}
+.contact .btContact .btContactRow .btContactName {
+  flex: 1 0 50%;
+  max-width: 50%;
+  padding-right: 1em;
+  position: relative;
+}
+.contact .btContact .btContactRow .btContactName .wpcf7-form-control-wrap {
+  position: relative;
+}
+.contact .btContact .btContactEmail {
+  flex: 1 0 50%;
+  max-width: 50%;
+  position: relative;
+}
+.contact .btContact .btContactList {
+  flex: 1 0 100%;
+  max-width: 100%;
+  position: relative;
+}
+.contact .btContact .fancy-select {
+  position: relative;
+}
+.contact .btContact .btContactList select {
+  padding-left: 3em;
+  font-size: 0.8em;
+  height: 3.3em;
+  opacity: 0.8;
+}
+.contact .btContact .btContactMessage {
+  flex: 1 0 100%;
+  max-width: 100%;
+  position: relative;
+}
+.contact .btContactButton .has-spinner {
+  background: #B61883;
+  padding: 8px 25px;
+  border: 2px solid #B61883;
+  border-radius: 30px;
+  letter-spacing: 0.015rem;
+  font-size: 14px;
+  font-weight: 400;
+  color: #f5f9fe;
+  box-shadow: 0 3px 6px #c9d8f4;
+  transition: 0.5s;
+}
+.contact .btContactButton .has-spinner:hover {
+  background: #f5f9fe;
+  border-color: #B61883;
+  color: #B61883;
+}
+
+footer {
+  background-image: url(http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/03/footer_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+footer .d-flex {
+  padding: 60px;
+}
+footer .content1 {
+  padding: 30px 50px;
+}
+footer .footer-title1 {
+  margin: 40px;
+}
+footer .footer-title {
+  margin: 20px;
+}
+footer i {
+  padding: 2px;
+}
+footer h2 {
+  color: white;
+}
+footer a {
+  color: white;
+  font-size: 0.9em;
+}
+footer span {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

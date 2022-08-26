@@ -1,0 +1,82 @@
+.contact {
+    background-image: url(http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/accent_bottom_wave_01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    #contact-1{
+        padding-left: 20px;
+    padding-right: 20px;
+    }
+      h1{
+        font-size: 30px;
+      }
+      .btContact {
+        .btContactRow input {
+            padding: 1em 1em 1em 3.5em !important;
+            font-size: .8em !important;
+            height: 3.7em;
+        }
+        .btContactRow {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding-bottom: 1em;
+            .btContactName {
+                -webkit-flex: 1 0 50%;
+                -ms-flex: 1 0 50%;
+                flex: 1 0 50%;
+                max-width: 50%;
+                padding-right: 1em;
+                position: relative;
+                .wpcf7-form-control-wrap {
+                    position: relative;
+                }
+            }
+        }
+        .btContactEmail {
+            -webkit-flex: 1 0 50%;
+            -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+            max-width: 50%;
+            position: relative;
+        }
+        .btContactList {
+            -webkit-flex: 1 0 100%;
+            -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+            max-width: 100%;
+            position: relative;
+        }
+        .fancy-select {
+            position: relative;
+        }
+        .btContactList select {
+            padding-left: 3em;
+            font-size: .8em;
+            height: 3.3em;
+            opacity: .8;
+        }
+        .btContactMessage {
+            -webkit-flex: 1 0 100%;
+            -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+            max-width: 100%;
+            position: relative;
+        }
+      }
+    .btContactButton {
+        .has-spinner {
+            @include styleButton($color-5,$pd-6,$pd-1,$bd-1 solid $color-5,$bd-3,$ls-1);
+            @include styleText($fs-1,$fw-1,$color-white-1);
+            box-shadow: 0 3px 6px $color-blue-3;
+            transition: .5s;
+            &:hover{
+                @include styleButtonHover($color-white-1,$color-5,$color-5);
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,52 @@
+header {
+   
+    background-color: $color-white-3;
+    box-shadow: 0 2px 4px $color-white-2;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+   
+.nav-item {
+    .nav-link {
+        @include styleText($fs-1, $fw-2, $color-dark-2); 
+        padding: 20px;
+        transition: 0.2s;
+        &::after {
+            content: "";
+            bottom: -4px;
+            margin-left: -4px;
+            z-index: 5;
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+            width: 8px;
+            height: 8px;
+            display: block;
+            background-color: $color-5;
+            transform: scale(0);
+            transition: 0.2s;
+        }
+        &:hover {
+           color: $color-5;
+            &::after {
+                transform: scaleY(1);
+            }
+        }
+    }
+    padding-right: 30px;
+   
+}
+.nav-icon {
+    .nav-link{
+        font-size: $fs-1;
+        color: $color-dark-2;
+        transition: .5s;
+        &:hover{
+            color: $color-5;
+        }
+    }
+}
+
+
+  
+}
